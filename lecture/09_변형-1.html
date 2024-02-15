@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>변형1</title>
+  <style>
+    .trans1{
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      border:1px solid black;
+      transition-duration :2s;
+    }
+    .trans2{
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      border:1px solid black;
+      transition-property: background-color,transform,width,height;
+      transition-duration :2s,3s,4s,10s;
+    }
+
+    .trans1:hover{
+      width:200px;
+      background-color: yellow;
+
+    }
+
+    .trans2:hover{
+      width:200px;
+      height:200px;
+      background-color: yellow;
+      transform:rotateZ(180deg);
+    }
+
+
+    .trans3{
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      border:1px solid black;
+      transition-duration :2s;
+      transition-timing-function: linear;
+    }
+
+    .trans3:hover{
+      width:200px;
+      height:200px;
+      background-color: yellow;
+      transform:rotateZ(180deg);
+    }
+
+    .trans4{
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      border:1px solid black;
+      transition-duration :2s;
+      transition-delay: 2s;
+    }
+
+    .trans4:hover{
+      width:200px;
+      height:200px;
+      background-color: yellow;
+      transform:rotateZ(180deg);
+    }
+  </style>
+</head>
+<body>
+<h1>트랜지션</h1>
+<p>
+  시간에 따라 웹 요소의 스타일 속성이 조금씩 바뀌는 것
+</p>
+<h3>트랜지션 진행 시간 지정하기</h3>
+<div class="trans1"></div>
+<h3>트랜지션 진행별 시간 지정하기</h3>
+<div class="trans2"></div>
+<h3>트랜지션 진행별 속도 지정하기</h3>
+<p>
+  transition-timing-function:
+  linear|ease|ease-in|ease-out...
+</p>
+<div class="trans3"></div>
+<hr>
+<h3>트랜직션 시간 지연하기</h3>
+<div class="trans4"></div>
+</body>
+</html>
